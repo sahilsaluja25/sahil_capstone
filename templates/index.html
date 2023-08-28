@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <h1>Note Manager</h1>
+    <form action="/" method="post">
+        <label for="note">Enter a new note:</label><br>
+        <input type="text" id="note" name="note"><br>
+        <input type="submit" value="Add Note">
+    </form>
+    <br>
+    <h2>Notes</h2>
+    
+        <!-- Placeholder for displaying notes from the backend -->
+        
+        <ul>
+            {% for note in notes %}
+            <li>{{ note[1] }}</li>
+            {% endfor %}
+        </ul>
+
+        
+
+        
+    
+</body>
+</html>

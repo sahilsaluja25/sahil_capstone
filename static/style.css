@@ -1,0 +1,49 @@
+/* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.note-list, .task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.note-list li, .task-list li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.note-list li::before, .task-list li::before {
+    content: "\2022"; /* Bullet point */
+    margin-right: 10px;
+    color: #007bff;
+}
